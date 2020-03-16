@@ -1,0 +1,12 @@
+---
+title: "Beauty R"
+output: html_notebook
+---
+
+### 03-16-2020
+
+1. Using the `microbenchmark` package to compare the execution time of R expressions
+
+
+
+
