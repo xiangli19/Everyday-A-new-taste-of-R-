@@ -7,6 +7,73 @@ output: html_notebook
 
 1. Using the `microbenchmark` package to compare the execution time of R expressions
 
+2. `manipulate` function: The manipulate function accepts a plotting expression and a set of controls (e.g. slider , picker , checkbox , or button ) which are used to dynamically change values within the expression. **may not be as useful as interactive ploting packages like `plotly`???**
+
+```{r eval=FALSE}
+library(manipulate)
+manipulate(
+  plot(cars, xlim = c(x.min, x.max)),
+  x.min = slider(0,15),
+  x.max = slider(15,30))
+```
+
+
+### 03-17-2020
+
+1. Use `apply` to apply function with multiple arguments to dataframe rows
+
+```{r evel=FALSE}
+
+fun_1 <- function(x,arg1,arg2) pass
+
+res <- apply(fun_1,1,function(x) fun_1(x,arg1,arg2))
+```
+
+### 03-18-2020
+
+1. convert a string to be a variable name
+
+https://stackoverflow.com/questions/6034655/convert-string-to-a-variable-name
+
+```{r}
+## method 1
+pn <- "pname"
+pv <- 4
+do.call("<-",list(pn,pv)) ## quivalent to pname <- 4
+
+## method 2
+as.name("pname") ## if you have a variable with name 'pname'
+```
+
+2. display full text in r console
+
+https://community.rstudio.com/t/console-text-truncation-in-tibbles/7098
+
+```{r}
+c(text) ## when text is truncated in r console
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
