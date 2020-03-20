@@ -54,6 +54,31 @@ c(text) ## when text is truncated in r console
 ```
 
 
+### 03-19-2020
+
+1. convert a list of dataframe to one dataframe
+
+https://stackoverflow.com/questions/2851327/convert-a-list-of-data-frames-into-one-data-frame
+
+
+### 03-20-2020
+
+1. select rows of dataframe based on unqiue value of a certain column
+
+https://stackoverflow.com/questions/25571547/select-unique-values-with-select-function-in-dplyr-library
+
+```{r}
+distinct_df = df %>% distinct(field1,.keep_all=TRUE)
+
+df %>% 
+  group_by(x,y) %>%
+  summarise() %>%
+  select(unique.x=x, unique.y=y)
+```
+
+2. Name Extraction Recognition with `monkeylearn` package, 300 free quota every month
+
+https://docs.ropensci.org/monkeylearn/articles/monkeylearn_intro.html
 
 
 
